@@ -10,19 +10,19 @@ export default class Bomb extends Component {
     }
   }
 
+  timer = () => {
+    if (this.state.secondsLeft === 0) {
+      return 'Boom!';
+    } else {
+      return `${this.state.secondsLeft} seconds left before I go boom!`;
+    }
+  };
+
 
   render() {
-    const timer = () => {
-      if (this.state.secondsLeft === 0) {
-        return 'Boom!'
-      } else {
-        return `${this.state.secondsLeft} seconds left before I go boom!`
-      }
-    }
-
     return(
       <div>
-        {timer()}
+        {this.timer()}
       </div>
     )
   }
