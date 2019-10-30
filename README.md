@@ -51,7 +51,7 @@ determine what the starting count should be.
     We'll need to learn how to set an intial state _based off that component's props_. 
     React passes a component's props as an argument into the constructor (i.e., `constructor(props)`). 
     Remember to call `super()` on the first line of the constructor (this is
-    required in React components if we are to use `this` in the constructor).
+    required in React components if we are to use `this.state` in the constructor).
     Ultimately, our constructor should look something like this:
    
     ```js
